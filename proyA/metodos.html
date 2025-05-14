@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>metodos</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Custom Styles -->
+  <style>
+    /* Navbar styling */
+    .navbar {
+      background-color: #d32f2f; /* Color rojo para el menú */
+      font-size: 1.1rem; /* Aumentar el tamaño de la fuente */
+      padding-left: 0; /* Eliminar margen izquierdo */
+      padding-right: 0; /* Eliminar margen derecho */
+    }
+
+    .navbar-brand img {
+      height: 70px; /* Hacer el logo más grande */
+    }
+
+    .navbar-nav .nav-link {
+      padding: 10px 20px; /* Espaciado más amplio en el menú */
+      color: #fff4f4; /* Color de los textos del menú */
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #ffe600; /* Color amarillo cuando se pasa el ratón */
+    }
+
+    /* Footer */
+    .carousel-footer {
+      background-color: rgb(255, 159, 159);
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      color: rgb(0, 0, 0);
+      margin-top: 20px;
+      max-width: 30%; /* Limita el tamaño del cuadro */
+      margin-left: auto; /* Centra el cuadro */
+      margin-right: auto; /* Centra el cuadro */
+    }
+
+    /* Content Margin */
+    .content {
+      margin: 40px; /* Agregar margen alrededor del contenido */
+    }
+
+    
+    /* Footer en la parte inferior */
+    .footer {
+      background-color: #212529; /* Color oscuro para el fondo */
+      color: white; /* Texto en blanco */
+      padding: 10px 0;
+      text-align: center;
+      border-top: 3px solid #d32f2f; /* Borde superior rojo */
+      position: fixed; /* Fija el footer en la parte inferior */
+      bottom: 0;
+      width: 100%;
+    }
+
+    .footer a {
+      color: #ffe600; /* Color amarillo para los enlaces */
+    }
+
+    .footer a:hover {
+      text-decoration: none;
+      color: #ffffff; /* Cambio de color al pasar el ratón */
+    }
+
+    /* Ajuste para el contenido cuando el footer es fijo */
+    .content {
+      padding-bottom: 60px; /* Evita que el contenido se cubra por el footer */
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Area Start -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="metodos.html">
+        <img src="assets/images/logoElites.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#mainNav" 
+              aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="generalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Generalidades y Marco Teórico
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="generalDropdown">
+              <li><a class="dropdown-item" href="introduccion.html" target="_blank">Introducción</a></li>
+              <li><a class="dropdown-item" href="antecedentes.html" target="_blank">Antecedentes</a></li>
+              <li><a class="dropdown-item" href="planteamiento.html" target="_blank">Planteamiento del Problema</a></li>
+              <li><a class="dropdown-item" href="arbol_problemas.html" target="_blank">Árbol de Problemas</a></li>
+              <li><a class="dropdown-item" href="formulacion.html" target="_blank">Formulación del Problema</a></li>
+              <li><a class="dropdown-item" href="proposito.html" target="_blank">Propósito del Estudio</a></li>
+              <li><a class="dropdown-item" href="metodos.html" target="_blank">Métodos e Instrumentos</a></li>
+              <li><a class="dropdown-item" href="planificacion.html" target="_blank">Planificación de Actividades</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="estructuradoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Análisis y Diseño Estructurado
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="estructuradoDropdown">
+              <li><a class="dropdown-item" href="modelo_ambiental.html" target="_blank">Modelo Ambiental</a></li>
+              <li><a class="dropdown-item" href="modelo_comportamiento.html" target="_blank">Modelo de Comportamiento</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="objetosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Análisis y Diseño Orientado a Objetos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="objetosDropdown">
+              <li><a class="dropdown-item" href="casos_uso.html" target="_blank">Diagrama de Casos de Uso</a></li>
+              <li><a class="dropdown-item" href="clases.html" target="_blank">Diagrama de Clases</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html" target="_blank">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Header Area End -->
+
+  <div class="content">
+    <!-- Método, medios e instrumentos de investigación Section Start -->
+    <div class="container mt-5">
+      <h2 class="mb-4">Método, medios e instrumentos de investigación</h2>
+      <hr class="mb-4" style="border-color: rgb(189, 0, 0); width: 90%;">
+      <div class="content-section">
+        <h3>Método</h3>
+        <p>En este caso, hemos elegido el método cualitativo, 
+          ya que nos permite entender cómo la empresa Elite’s interactúa con el sistema actual y qué mejoras son necesarias para optimizar los procesos internos.</p>
+
+        <h3>¿Por qué elegimos el método Cualitativo?</h3>
+        <p><strong>Cualitativo:</strong> El método cualitativo se centrará en entender las necesidades operativas de la empresa, con el fin de diseñar un sistema eficiente que optimice las tareas cotidianas, como la gestión de inventarios, la facturación y el seguimiento de ventas.</p>
+        <ul>
+          <li>Entrevista con el supervisor general.</li>
+          <li>Observación directa de los procesos internos (cómo se gestionan las ventas y el inventario actualmente).</li>
+        </ul>
+        <h3>Medios</h3>
+        <p>Para llevar a cabo esta investigación, se utilizarán los siguientes medios de recolección de datos:</p>
+        <strong>Entrevista con el supervisor general</strong>
+        <p>Se entrevistará a el supervisor general(como los de ventas, almacén y administración) para conocer cómo están manejando los procesos actualmente. Estas entrevistas se centrarán en lo siguiente:</p>
+        <ul>
+          <li><strong>Procesos manuales actuales:</strong>¿Cómo se gestionan actualmente los pagos de los clientes y la facturación?</li>
+          <li><strong>Dificultades actuales:</strong> ¿Qué problemas enfrentan con los procesos manuales o con los sistemas actuales?</li>
+          <li><strong>Áreas de mejora:</strong>¿Qué características considera más importantes en un sistema de control de ventas?</li>
+        </ul>
+        <strong>Revisión documental</strong>
+        <p><strong>Registros de ventas e inventarios: </strong>Se revisarán los registros actuales (papeles, hojas de Excel, libros de inventario, etc.) para entender cómo están funcionando los sistemas actuales y qué datos son cruciales para la gestión interna.</p>
+        <h3>Ventajas del método cualitativo para nuestra investigación en Elite’s:</h3>
+        <ul>
+          <li>Ofrece una visión integral tanto desde una perspectiva cuantitativa como cualitativa.</li>
+          <li>Nos permite validar los resultados cuantitativos con los insights cualitativos obtenidos de entrevistas y encuestas.</li>
+          <li>Facilita la identificación de áreas de mejora mediante la combinación de datos numéricos y comentarios detallados de los usuarios.</li>
+        </ul>
+
+        <h3>Medios de Investigación</h3>
+        <p>Para recopilar los datos necesarios, utilizaremos fuentes primarias y secundarias:</p>
+        <h4>Fuentes Primarias:</h4>
+        <ul>
+          <li><strong>Encuestas a clientes:</strong> Realizaremos encuestas a los clientes que han utilizado el sistema de ventas en línea, preguntando sobre su satisfacción con el proceso de compra, la facilidad de uso y la calidad del servicio.</li>
+          <li><strong>Entrevistas con empleados:</strong> Entrevistaremos a empleados que interactúan con el sistema para conocer su experiencia al gestionar inventarios, procesar pedidos y realizar facturación.</li>
+          <li><strong>Observación directa:</strong> Observaremos directamente cómo los empleados y clientes interactúan con el sistema para identificar problemas que no se detectan fácilmente mediante encuestas o entrevistas.</li>
+        </ul>
+        <h3>Informe de Resultados y Recomendaciones</h3>
+        <p>A partir de las entrevistas, observaciones y revisión de documentos, se generará un informe que identifique los problemas clave, los cuellos de botella y las oportunidades de mejora en los procesos internos. El informe incluirá recomendaciones claras para el nuevo sistema de ventas y control de inventarios, con el objetivo de aumentar la eficiencia y reducir errores.</p>
+      
+      </div>
+    </div>
+    <!-- Formulación del Problema Section End -->
+  </div>
+  <!-- Content Area End -->
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2025. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Bootstrap 5 scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
